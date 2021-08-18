@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Ubuntu', sans-serif;
+ 
+}
+ul {
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+  
+}
+a{
+    text-decoration: none;
+    color: rgb(241, 114, 100);
+}
+body{
+    background-image:url(./pexels-eberhard-grossgasteiger-844297.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 10px 15px palevioletred;
+    margin-bottom: 45px;
+
+}
+h1{
+    padding: 25px;
+}
+header ul{
+    display:flex;
+   
+}
+header ul li{
+  padding: 20px;
+    }
+header ul li a:hover{
+color: rgb(104, 5, 38);
+text-decoration: underline;
+}
+.container{
+    text-align: center;
+    font-style:oblique;
+}
+.container .name h1{
+    font-size: 400px;
+
+
+}
+.container .name h5{
+    font-size: 25px;
+}
+#arrow {
+    font-size: 25px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink{
+    to{
+        visibility: hidden;
+    }
+}
+
+#animation{
+    transition: 300ms;
+}
+.rotate{
+        transform: rotate(180deg);
+        transition:400ms;
+}
+.active{
+    display: block !important;
+}
+#about p{
+    max-width: 600px;
+    margin:auto;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 35px;
+    
+}
+.form input{
+    width: 50%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+.form button{
+    width: 15%;
+    padding: 5px 10px;
+    background-color: salmon;
+    color:black;
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+    transition: 300ms;
+    margin-top: 40px;
+}
+.form button:hover{
+    background-color: crimson;
+    color: plum;
+}
+@media only screen and (max-width:768){
+    .form{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+   #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+}
