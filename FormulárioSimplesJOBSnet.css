@@ -1,0 +1,32 @@
+body{
+    background-image: url(pexels-johannes-plenio-1103970.jpg);
+}
+fieldset{
+    font-family:  'Playfair Display', serif;
+    padding: 20px;
+    display: block;
+    margin-left: 2px;
+    margin-bottom: 15px;
+    margin-right: 2px;
+    border: 3px inset;
+    border-radius: 9px;
+    box-shadow: 20px -8px teal;;
+
+}
+h3, h4{
+    text-align: center;
+    font-style: italic;
+}
+select {
+    padding: 4px 15px;
+}
+.button{
+    text-align: center;
+
+}
+.button :hover{
+   
+        padding: 5px 10px;
+        background-color: rgb(80, 240, 128);
+        color: rgb(0, 0, 0);
+}
