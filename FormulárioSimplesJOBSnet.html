@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html lang="Pt-BR">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Playfair + Display: ital @ 1 & display = swap "rel =" stylesheet ">
+     <link rel="stylesheet" href="desafio_final_gama.css">
+       <title> JobsNET</title>
+       <div align="center">
+       <img src="jobsnet.png"></div>
+       <h3>DADOS PESSOAIS</h3>
+    </head>
+    <body>
+<fieldset>
+    <label for="inputName" class="rotulo"> Nome Completo:</label>
+    <input type="text" id="inputName" placeholder="Sem abreviações" required maxlength="25">
+    <label for="inputEnd" class="rotulo"> Endereço:</label>
+    <input type="text" id="inputEnd"  placeholder="ex: Nome da Rua, 25" required>
+    <label for="inputBairro" class="rotulo"> Bairro:</label>
+    <input type="text" id="inputBairro" required>
+    <label for="inputCidade" class="rotulo"> Cidade:</label>
+    <input type="text" id="inputCidade" required >
+    <label for="inputEstado" class="rotulo"> Estado:</label>
+    <select id="inputEstado" placeholder="Estado" name="Estado"> 
+        <option value="1">Acre</option>
+        <option value="2">Alagoas</option>
+        <option value="3">Amapá</option>
+        <option value="4">Amazonas</option>
+        <option value="5">Bahia</option>
+        <option value="6">Ceará</option>
+        <option value="7">Distrito Federal</option>
+        <option value="8">Espírito Santo</option>
+        <option value="9">Goiás</option>
+        <option value="10">Maranhão</option>
+        <option value="11">Mato Grosso</option>
+        <option value="12">Mato Grosso Do Sul</option>
+        <option value="13">Minas Gerais</option>
+        <option value="14">Pará</option>
+        <option value="15">Paraíba</option>
+        <option value="16">Paraná</option>
+        <option value="17">Pernambuco</option>
+        <option value="18">Piauí</option>
+        <option value="19">Rio de Janeiro</option>
+        <option value="20">Rio Grande do Norte</option>
+        <option value="21">Rio Grande do Sul</option>
+        <option value="22">Rondônia</option>
+        <option value="23">Roraima</option>
+        <option value="24">Santa Catarina</option>
+        <option value="25">São Paulo</option>
+        <option value="26">Sergipe</option>
+        <option value="27">Tocantins</option>
+</fieldset>
+
+<fieldset>
+    <label for="inputNasc" class="rotulo"> Data de Nascimento:</label>
+    <input type="date" id="inputNasc"  placeholder="Data de Nascimento"required maxlength="8">
+    <label for="selectSexo" class="rotulo">Sexo:</label>
+    <select id="selectSexo" placeholder="Sexo" name="basico">
+        <option value="1">Masculino</option>
+        <option value="2">Feminino</option>
+        <option value="3">Não-Binário</option>
+        <option value="4">Transgênero</option>
+    </select>
+
+    <label for="selectEstCivil" class="rotulo">Estado Civil:</label>
+    <select id="selectEstCivil" placeholder="Estado Civil" name="basico">
+        <option value="1">Solteiro</option>
+        <option value="2">Casado</option>
+        <option value="3">União Estável</option>
+        <option value="4">Divorciado</option>
+        <option value="5">Viúvo</option>
+   
+    </select>
+    <label for="inputTel" class="rotulo"> Telefone:</label>
+    <input type="tel" id="inputTel" required maxlength="10">
+ 
+
+    <label for="inputCel" class="rotulo"> Celular 1:</label>
+    <input type="tel" id="inputCel" required maxlength="11"><br>
+  
+    <label for="inputCel2" class="rotulo"> Celular 2:</label>
+    <input type="tel" id="inputCel2" required maxlength="11">
+  
+    <label for="inputEmail" class="rotulo"> E-mail:</label>
+    <input type="email" id="inputEmail" placeholder="ex: myemail@email.com" required maxlength="25">
+</fieldset>
+
+<fieldset>
+<div class="form">
+
+    <label for="inputRG" class="rotulo"> Identidade:</label>
+    <input type="texto" id="inputRG" required>
+
+    <label for="inputCpf" class="rotulo"> CPF:</label>
+    <input type="text" id="inputCpf" required minlength="11" maxlength="11"><br>
+        
+    <label for="inputCarro" class="rotulo"> Possui Notebook?</label>
+    <input type="radio" id="inputCarro" name="Veiculo" value="carro">
+    <label for="radioCarro">Sim</label>
+    <input type="radio" id="inputCarro1" name="Veiculo" value="carro1">
+    <label for="radioCarro1">Não</label><br>
+
+    <label for="inputCNH" class="rotulo"> Qual o sistema operacional você utiliza?</label>
+    <input type="radio" id="inputCNH" name="Carteira" value="documento"required>
+    <label for="radioCNH">Linux</label>
+    <input type="radio" id="inputCNH1" name="Carteira" value="documento1">
+    <label for="radioCNH3">Windows</label> <input type="radio" id="inputCNH2" name="Carteira" value="documento2">
+    <label for="radioCNH3">macOS</label><br>
+
+</div>
+</fieldset>
+       <main>
+           <h4>Conhecimento sobre linguagens</h4>
+           <fieldset>
+               
+            <label for="experience">Já trabalhou na área de programação?</label>
+            <input type="radio" id="experience" name="experiencia" value="experiencia">
+            <label for="experience">Sim</label>
+            <input type="radio" id="experience1" name="experiencia1" value="experiencia">
+            <label for="experience1">Não</label><br>
+
+            <label for="experienceArea" class="experiencia">Quanto tempo de experiência você possui?</label>
+            <select id="experienceArea" name="experienceArea">
+                <option value="1">Menos de 1 ano</option>
+                <option value="2">Entre 1 e 3 anos</option>
+                <option value="3">Entre 3 e 5 anos </option>
+                <option value="4">Acima de 5 anos</option>
+            </select><br>
+                
+                <label for="linguDominio" class="dominio">Quais linguagens você possui maior domínio?</label>
+                <select id="linguDominio" name="dominio">
+                    <option value="1">JavaScript</option>
+                    <option value="2">Python</option>
+                    <option value="3">Java </option>
+                    <option value="4">C++ / C /C# </option>
+                    <option value="5">Ruby on Rails</option>
+                </select>
+           </fieldset>
+
+           <div onclick="alert('Dados enviados com sucesso')" class="button">
+            <button>Enviar Currículo</button>
+       </div>
+ </main>
+    </body>
+    </html>
